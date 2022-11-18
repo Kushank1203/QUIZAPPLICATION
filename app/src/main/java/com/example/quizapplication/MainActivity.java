@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String name = username.getText().toString();
                 String pass = password.getText().toString();
+                //hello kushank
 
                 String profArray [] = {"Prof1", "Prof2", "Prof3", "Prof4"};
                 String prof_passArray [] = {"1000", "1001", "1002", "1003"};
