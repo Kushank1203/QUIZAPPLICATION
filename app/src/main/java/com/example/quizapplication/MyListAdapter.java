@@ -1,6 +1,8 @@
 package com.example.quizapplication;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,7 +50,7 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyListAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyListAdapter.ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         holder.title_name1.setText(quiz_namelist1[position]);
         holder.description1.setText(quiz_sublist1[position]);
         holder.images.setImageResource(image_list1[position]);
@@ -57,7 +59,18 @@ public class MyListAdapter extends RecyclerView.Adapter<MyListAdapter.ViewHolder
         holder.starts.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context1, "Hello", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context1, "Hello "+start_quiz[position], Toast.LENGTH_SHORT).show();
+                switch(position){
+                    case 0:
+                        Toast.makeText(context1, "hiii", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 1:
+                        Toast.makeText(context1, "hiii1", Toast.LENGTH_SHORT).show();
+                        break;
+                    case 2:
+                        Toast.makeText(context1, "hiii2", Toast.LENGTH_SHORT).show();
+                        break;
+                }
             }
         });
     }

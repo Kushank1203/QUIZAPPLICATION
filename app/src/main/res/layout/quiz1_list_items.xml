@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/questions"
+        android:textSize="22sp"
+        android:textColor="#070707"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:text="Option 1"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton1"
+            android:text="Option 2"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:text="Option 3"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <RadioButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:text="Option 4"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+    </RadioGroup>
+</LinearLayout>
