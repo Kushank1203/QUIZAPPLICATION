@@ -24,7 +24,7 @@ public class ProfessorActivity1 extends AppCompatActivity {
     RecyclerView.LayoutManager recycler_manager;
     String [] Quizes = {"Quiz 1", "Quiz 2", "Quiz 3"};
     String [] subject = {"Data Structures And Algorithms","Discrete Mathematical Structures","Operating Systems"};
-    int [] quiz_images = {R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon};
+    int [] quiz_images = {R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

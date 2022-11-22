@@ -25,10 +25,10 @@ public class StudentActivity extends AppCompatActivity {
     RecyclerView recyclerView1;
     RecyclerView.Adapter recycler_adapter1;
     RecyclerView.LayoutManager recycler_manager1;
-    String [] Quizes = {"Quiz 1", "Quiz 2", "Quiz 3","Quiz 4","Quiz 5","Quiz 6,","Quiz 7"};
-    String [] subject = {"Data Structures And Algorithms","Discrete Mathematical Structures","Operating Systems","121","212","166","115"};
-    int [] quiz_images = {R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon};
-    String [] start_the_quiz = {"Take Quiz1","Take Quiz2","Take Quiz3","Take Quiz4","Take Quiz5","Take Quiz6","Take Quiz7"};
+    String [] Quizes = {"Quiz 1", "Quiz 2", "Quiz 3"};
+    String [] subject = {"Data Structures And Algorithms","Discrete Mathematical Structures","Operating Systems"};
+    int [] quiz_images = {R.drawable.quiz_icon,R.drawable.quiz_icon,R.drawable.quiz_icon};
+    String [] start_the_quiz = {"Take Quiz1","Take Quiz2","Take Quiz3"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
